@@ -18,7 +18,7 @@ void main() {
 }
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  const FirstScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,9 +41,9 @@ class FirstScreen extends StatelessWidget {
 }
 
 class SecondScreen extends StatefulWidget {
-  SecondScreen({Key? key, this.title}) : super(key: key);
+  SecondScreen({Key key, this.title}) : super(key: key);
 
-  final String? title;
+  final String title;
 
   @override
   State<StatefulWidget> createState() => new _SecondScreenState();
